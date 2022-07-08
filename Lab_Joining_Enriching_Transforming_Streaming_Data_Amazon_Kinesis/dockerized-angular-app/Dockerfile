@@ -9,7 +9,7 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 RUN apt-get install curl -y
 RUN apt-get install rpm -y
 RUN apt-get install gcc g++ make -y
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
 RUN apt-get install nodejs
 
 RUN mkdir -p /home/ansible/playbooks
